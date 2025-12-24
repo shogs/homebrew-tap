@@ -16,7 +16,7 @@ class GitWt < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+    if Hardware::CPU.arm?
       url "https://github.com/shogs/git-wt/releases/download/v0.2.0/git-wt_0.2.0_Linux_arm64.tar.gz"
       sha256 "b30442dd2dc98a058d4531615d286f7ba02b15ab39c28722c4c01696a465f28f"
     end
