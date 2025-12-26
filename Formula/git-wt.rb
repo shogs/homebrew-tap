@@ -5,21 +5,21 @@
 class GitWt < Formula
   desc "Git worktree management tool"
   homepage "https://github.com/shogs/git-wt"
-  version "0.3.2"
+  version "0.3.3"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/shogs/git-wt/releases/download/v0.3.2/git-wt_0.3.2_Darwin_x86_64.tar.gz"
-      sha256 "403176465db47ebcdb03316036c2e6647ad2b864636f046a47589444dd06bef9"
+      url "https://github.com/shogs/git-wt/releases/download/v0.3.3/git-wt_0.3.3_Darwin_x86_64.tar.gz"
+      sha256 "6920941c00b6ed868cb75596f11612fc5f8caec1067f8f77bd0223e5e4c73772"
 
       def install
         bin.install "git-wt"
       end
     end
     on_arm do
-      url "https://github.com/shogs/git-wt/releases/download/v0.3.2/git-wt_0.3.2_Darwin_arm64.tar.gz"
-      sha256 "526854ca3bc6b93fef6221f93c50209bd835c3b76efc408c85623e3a092b67dc"
+      url "https://github.com/shogs/git-wt/releases/download/v0.3.3/git-wt_0.3.3_Darwin_arm64.tar.gz"
+      sha256 "a63a7538860a91b92a46b93e08f531c2e1bb5c8babaff67c48b404ced578d60a"
 
       def install
         bin.install "git-wt"
@@ -30,8 +30,8 @@ class GitWt < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/shogs/git-wt/releases/download/v0.3.2/git-wt_0.3.2_Linux_x86_64.tar.gz"
-        sha256 "9557352e4ef83064863108cb5adf95d4d807998cf46f91d09cd49517da521b88"
+        url "https://github.com/shogs/git-wt/releases/download/v0.3.3/git-wt_0.3.3_Linux_x86_64.tar.gz"
+        sha256 "085667c0e3b71f4dfc5f73160f6e405dbd0167e408f2fce3cb3445c50ab0caf1"
 
         def install
           bin.install "git-wt"
@@ -40,8 +40,8 @@ class GitWt < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/shogs/git-wt/releases/download/v0.3.2/git-wt_0.3.2_Linux_arm64.tar.gz"
-        sha256 "a0198aa7290121063e6a35f19d096a8ace68715c8289153456b3cb888979df91"
+        url "https://github.com/shogs/git-wt/releases/download/v0.3.3/git-wt_0.3.3_Linux_arm64.tar.gz"
+        sha256 "bcb49a47e415cbeb933e24f2a51ff6db97e0da98c1ae073314a2e7525a5dfdda"
 
         def install
           bin.install "git-wt"
